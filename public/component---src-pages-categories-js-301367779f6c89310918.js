@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{S7ka:function(n,e,t){"use strict";t.r(e);var a=t("q1tI"),c=t.n(a);t("Bl7J"),t("Wbzz");e.default=function(n){n.data;return c.a.createElement("div",null,"categories.js")}}}]);
+//# sourceMappingURL=component---src-pages-categories-js-301367779f6c89310918.js.map
