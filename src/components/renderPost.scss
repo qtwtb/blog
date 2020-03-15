@@ -1,0 +1,104 @@
+
+.info-container {
+    width: 60vw !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    .img-container {
+        margin: 0 !important;
+        height: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tags-renderpost {
+        z-index: 100000 !important;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        .inside-tags-renderpost {
+            margin-left: 1vw;
+        }
+
+        .inside-tags-renderpost:hover {
+            background: purple;
+        }
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+
+
+@media only screen and (max-width: 400px) {
+    .info-container {
+        width: 95vw !important;
+        flex-direction: column !important;
+        overflow: hidden;
+
+        .string-container {
+            width: 100% !important;
+        }
+
+        .img-container {
+            width: 95vw !important;
+            height: 28vh !important;
+
+            img {
+                position: absolute !important;
+                top: 0 !important;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+    .info-container {
+        width: 80vw !important;
+        flex-direction: column !important;
+        overflow: hidden;
+
+        .string-container {
+            width: 100% !important;
+        }
+
+        .img-container {
+            width: 95vw !important;
+            height: 28vh !important;
+
+            img {
+                position: absolute !important;
+                top: 0 !important;
+            }
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 500px) and (max-width: 768px)  {
+    .info-container {
+        width: 90vw !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .info-container {
+        width: 60vw !important;
+
+        .img-container {
+            margin-top: 1vh !important;
+            margin-bottom: 1vh !important;
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Blog for my customers`,
+    description: `In this blogs, I am explaining how to work with me and How to update your website by yourself.`,
+    author: `kenta oda`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-sass",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -30,5 +31,33 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        spaceId: "9mwzzdr5k5u0",
+        accessToken: "rT5c6UZHjI8LlCYuvvr0ToernOveM2isVo19AzPBIEk",
+        host: "preview.contentful.com",
+      },
+    },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-images-contentful",
+            options: {
+              maxWidth: 590,
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-typography",
+      options: {
+        pathToConfigModule: "src/utils/typography",
+      },
+    },
   ],
 }

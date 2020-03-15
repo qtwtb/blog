@@ -1,35 +1,48 @@
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import './header.scss'
+import { FaPizzaSlice } from 'react-icons/fa'
+import { NavDropdown } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+
+const Header = ({ siteTitle }) => {
+  const categoriesData = useStaticQuery(
+    graphql`
+    {
+      allContentfulTag {
+        edges {
+          node {
+            tag
+            slug
+          }
+        }
+      }
+    }
+    `
+  )
+
+  return (
+    <header>
+      <div className='header-home'>
+        <div className='header-container'>
+          <Link className='header-link-to' to='/'>All Posts</Link>
+          <a className='header-link-to' href='mailto:qtwtbob@gmail.com'>Contact Me</a>
+          <NavDropdown title='Categories' className='header-nav-dropdown'>
+            {
+              categoriesData.allContentfulTag.edges.map(({ node }) => (
+                <NavDropdown.Item href={`/category/${node.slug}`} key={node.slug}>
+                  {node.tag}
+                </NavDropdown.Item>
+              ))
+            }
+          </NavDropdown>
+        </div>
+      </div>
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

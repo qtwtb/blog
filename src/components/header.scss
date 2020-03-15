@@ -1,0 +1,100 @@
+
+$height-variable: 70px;
+html {
+    -ms-overflow-style: none;
+}
+
+header {
+    width: 100vw !important;
+    height: $height-variable;
+    @extend .temp;
+    position: fixed;
+    margin-bottom: 2vh;
+    top: 0;
+    z-index: 1000;
+    background-color: #5DADE2;
+
+    .header-container {
+        width: 100%;
+        height: $height-variable;
+        @extend .temp;
+
+    .header-link-to, .header-nav-dropdown {
+        width: 33vw !important;
+        text-align: center;
+        @extend .temp;
+        color: #F0F3F4 !important;
+        padding: 0 !important;
+        margin: 0;
+
+        .dropdown-toggle {
+            width: 100%;
+            padding: 0 !important;
+            @extend .temp;
+            color: #F0F3F4 !important;
+        }
+    }
+    }
+}
+
+
+.temp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+
+
+
+
+// /* Extra small devices (phones, 600px and down) */
+// @media only screen and (max-width: 600px) {
+    
+// }
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {
+    
+// }
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {
+    
+// }
+
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {
+    
+// }
+
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {
+    
+// }

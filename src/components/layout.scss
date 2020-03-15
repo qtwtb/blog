@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  font-family: 'Montserrat';
+}
+
+.blogpost-styling {
+  @extend .default-styling;
+  width: 50vw;
+  margin: auto;
+  margin-top: 10px;
+
+  .title-and-intro {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+    p {
+      margin-left: 2vw;
+    }
+    .created-at {
+      font-style: italic;
+    }
+
+    h1 {
+      margin-top: 2vh !important;
+      margin-bottom: 2vh !important;
+      text-align: start;
+    }
+  }
+
+  .post-body {  
+    padding-top: 2vh;
+  }
+
+  a {
+    text-decoration: none;
+    color: #00a8ff;
+  }
+
+  h1 {
+    font-size: 35px;
+    margin-top: 10vh;
+    text-transform: capitalize;
+  }
+
+  h2 {
+    font-size: 25px;
+    margin-top: 3vh;
+    text-transform: capitalize;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-top: 3vh;
+    text-transform: capitalize;
+  }
+
+  p {
+    font-size: 19px;
+    margin-bottom: 0.9rem;
+  }
+
+  * {
+    word-break: keep-all;
+  }
+  
+  iframe {
+    @extend .default-styling;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .tags-blogpost-js {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+
+  .toggled-tags {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .toggled-tags > div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    p:first-child {
+      margin-left: 0;
+    }
+
+    p {
+      margin-left: 1vh;
+      border: 1px solid #00a8ff;
+      padding: 7px 7px;
+      border-radius: 5px;
+    }
+
+    p:hover {
+      background-color: #00a8ff;
+      a { color: white; }
+      transition: 0.5s;
+    }
+  }
+
+  .gatsby-resp-image-link {
+    margin-bottom: 7vh;
+  }
+}
+
+.default-styling {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .blogpost-styling {
+      width: 96vw !important;
+      position: relative;
+      top: 70px;
+      
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
