@@ -21,7 +21,7 @@
         justify-content: flex-start;
         margin-bottom: 1vh;
         .inside-tags-renderpost {
-            margin-left: 1vw;
+            margin-left: 0.5vw;
             border: 1px solid #00a8ff;
             padding: 3px 6px;
             border-radius: 5px;
@@ -52,7 +52,6 @@
         width: 95vw !important;
         flex-direction: column !important;
         overflow: hidden;
-
         .string-container {
             width: 100% !important;
         }
@@ -102,6 +101,10 @@
 @media only screen and (min-width: 768px) {
     .info-container {
         width: 70vw !important;
+
+        .inside-tags-renderpost {
+            margin-left: 0.5vw;
+        }
 
         .img-container {
             margin-top: 1vh !important;
