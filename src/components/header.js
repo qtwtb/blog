@@ -30,7 +30,7 @@ const Header = () => {
           <div className='header-container'>
             <Link className='header-link-to' to='/'>All Posts</Link>
             <a className='header-link-to' href='mailto:qtwtbob@gmail.com'>Contact Me</a>
-            <NavDropdown title='Categories' className='header-nav-dropdown'>
+            <NavDropdown title='Categories' className='header-nav-dropdown header-link-to'>
               {
                 categoriesData.allContentfulTag.edges.map(({ node }) => (
                   <NavDropdown.Item href={`/category/${node.slug}`} key={node.slug}>

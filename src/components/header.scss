@@ -24,7 +24,7 @@ header {
         @extend .temp;
 
     .header-link-to, .header-nav-dropdown {
-        width: 33vw !important;
+        width: 33vw;
         text-align: center;
         @extend .temp;
         color: #F0F3F4 !important;
@@ -60,18 +60,33 @@ header {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .header-container {
+        justify-content: flex-start !important;
+        .header-link-to {
+            width: 15vw !important;
+        }
+    }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
+// Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .header-container {
+        justify-content: flex-start !important;
+        .header-link-to {
+            width: 13vw !important;
+        }
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+    .header-container {
+        justify-content: flex-start !important;
+        .header-link-to {
+            width: 10vw !important;
+        }
+    }
 }
 
 
