@@ -1,5 +1,6 @@
 
 .info-container {
+    cursor: default;
     width: 60vw !important;
     display: flex;
     align-items: center;
@@ -18,12 +19,28 @@
         flex-direction: row;
         align-items: flex-start;
         justify-content: flex-start;
+        margin-bottom: 1vh;
         .inside-tags-renderpost {
             margin-left: 1vw;
+            border: 1px solid #00a8ff;
+            padding: 3px 6px;
+            border-radius: 5px;
         }
 
         .inside-tags-renderpost:hover {
-            background: purple;
+            background-color: #00a8ff;
+            a { color: white; }
+            transition: 0.5s;
+        }
+
+        p {
+            margin: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
         }
     }
 }

@@ -18,7 +18,7 @@ class Category extends React.Component {
         if(node.headMedia == null){
           node.headMedia = {
             file: {
-              url: 'https://cdn3.iconfinder.com/data/icons/multimedia-ver-3-glyph/32/picture_images_photo_image_camera-128.png'
+              url: 'https://66.media.tumblr.com/d82ae4d72c20c8604eb3a0a393352403/tumblr_n4yj9eLpGi1qfirfao1_1280.jpg'
             }
           }
         }
