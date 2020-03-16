@@ -9,6 +9,8 @@
   width: 50vw;
   margin: auto;
   margin-top: 10px;
+  position: relative;
+  top: 70px;
 
   .title-and-intro {
     margin-top: 2vh;
@@ -128,7 +130,9 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    
+    .blogpost-styling {
+      width: 70vw !important;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -138,10 +142,14 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    
+  .blogpost-styling {
+    width: 70vw !important;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    
+  .blogpost-styling {
+    width: 60vw !important;
+  }
 }

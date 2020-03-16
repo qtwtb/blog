@@ -8,11 +8,15 @@ header {
     width: 100vw !important;
     height: $height-variable;
     @extend .temp;
-    position: fixed;
+    position: absolute;
     margin-bottom: 2vh;
     top: 0;
     z-index: 1000;
     background-color: #5DADE2;
+
+    .nav-wrapper {
+        height: $height-variable;
+    }
 
     .header-container {
         width: 100%;
